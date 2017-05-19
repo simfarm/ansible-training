@@ -33,7 +33,9 @@ sudo su -
 tar -zxvf ansible-tower-setup-latest.tar.gz 
 ```
 
-6) Fill out the inventory file. Sample settings as follows:
+6) Fill out the inventory file with `vi`.
+* Press `:x` to save changes.
+* Sample settings as follows:
 ```
 [tower]
 localhost ansible_connection=local
