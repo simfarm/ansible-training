@@ -79,6 +79,7 @@ Resolving Dependencies
 --> Finished Dependency Resolution
 
 Dependencies Resolved
+[...truncated...]
 ```
 
 * Ansible part looks like this:
@@ -95,4 +96,5 @@ skipping: [localhost] => {"changed": false, "skip_reason": "Conditional result w
 
 TASK [check_config_static : Ensure only one database host exists] *****************************************************************************************************************************
 skipping: [localhost] => {"changed": false, "skip_reason": "Conditional result was False", "skipped": true}
+[...truncated...]
 ```
