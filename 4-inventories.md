@@ -1,5 +1,4 @@
 ### Ansible Inventories
-
 Inventories detail your hosts. A simple inventory file for localhost:
 ```
 [local]
