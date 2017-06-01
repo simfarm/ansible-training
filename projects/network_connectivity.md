@@ -12,9 +12,9 @@ You are tasked with writing a playbook to robustly check for the network connect
 - hosts: all
   gather_facts: false 
   tasks:
-    - name: ping
+    - name: ping 1
       ping: 
-    - name: whatever
+    - name: sleep for one second
       pause:
         seconds: 1 
     << ADD HERE >>
