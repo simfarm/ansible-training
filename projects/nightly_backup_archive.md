@@ -22,10 +22,10 @@ You are a system administration who has been tasked with creating a playbook tha
         path: ~/Documents
         dest: /tmp/backup/documents.tar.bz2
         format: bz2
-    - name: create an archive of Music directory contents
+    - name: create an archive of Pictures directory contents
       archive:
-        path: ~/Music
-        dest: /tmp/backup/music.tar.bz2
+        path: ~/Pictures
+        dest: /tmp/backup/pictures.tar.bz2
         format: bz2
     << ADD HERE >>
 ```
