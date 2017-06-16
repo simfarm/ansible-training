@@ -1,0 +1,7 @@
+---
+
+- name: create new hires packet
+  hosts: all
+  gather_facts: no 
+  roles:
+    - role: new_hires
