@@ -1,0 +1,16 @@
+- name: create letters directory
+  file:
+    path: ~/Documents/{{name}}
+    state: directory
+- name: create offer letter
+  template:
+    src: templates/acceptance.j2
+    dest: ~/Documents/{{name}}/acceptance.md
+- name: create benefits overview 
+  template:
+    src: templates/benefits.j2
+    dest: ~/Documents/{{name}}/benefits.md
+- name: create company overview
+  template:
+    src: templates/company.j2
+    dest: ~/Documents/{{name}}/company.md

@@ -1,0 +1,7 @@
+---
+
+- name: create emails 
+  hosts: all
+  gather_facts: no 
+  roles:
+    - role: email_template

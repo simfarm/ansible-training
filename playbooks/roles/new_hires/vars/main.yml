@@ -1,0 +1,20 @@
+---
+# offer letter
+name: "Christopher Wang"
+position: "Software Engineer"
+company: "Ansible" 
+start_date: "February 2, 2018"
+supervisor: "Sandra Wills"
+hiring_manager: "Jeanmarie Martinko"
+
+# explanation of benefits
+vacation: 15
+
+# company overview
+principle1: sustainability
+principle2: innovation 
+principle3: service
+year: 1942
+countries: 92
+customer1: Google
+customer2: VMware
