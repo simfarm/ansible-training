@@ -33,7 +33,15 @@ sudo su -
 tar -zxvf ansible-tower-setup-latest.tar.gz 
 ```
 
-6) Fill out the inventory file with `vi`.
+6) Change directories.
+```
+cd ansible-tower-setup-3.1.4
+```
+
+7) Fill out the inventory file with `vi`.
+```
+vi inventory
+```
 * Press `:x` to save changes.
 * Sample settings as follows:
 ```
@@ -62,7 +70,7 @@ rabbitmq_cookie=cookiemonster
 rabbitmq_use_long_name=false
 ```
 
-7) Invoke `setup.sh` setup script:
+8) Invoke `setup.sh` setup script:
 ```
 ./setup.sh -e "gpgcheck=0" -e "minimum_var_space=2" -e "pendo_state=off"
 ```
