@@ -19,23 +19,23 @@ Let's investigate the calling playbook:
 
 Roles are a combination of directories and files. For the `new_hires` role, we have:
 ```
-└── new_hires
-    ├── tasks
-    │   └── main.yml
-    ├── templates
-    │   ├── acceptance.j2
-    │   ├── benefits.j2
-    │   └── company.j2
-    └── vars
-        └── main.yml
+new_hires
+├── tasks
+│   └── main.yml
+├── templates
+│   ├── acceptance.j2
+│   ├── benefits.j2
+│   └── company.j2
+└── vars
+    └── main.yml
 ```
 * Ansible looks for roles in a few discrete places. In this repo, we have:
 ```
-└── playbooks
-    ├─  new_hires.yml
-    ├─  ...
-    └── roles
-        └── new_hires
+playbooks
+├─  new_hires.yml
+├─  ...
+└── roles
+    └── new_hires
 ```
 * In other words, we have a `roles` directory that is inside of our `playbooks` directory.
 * `new_hires` is the name of our role and is a directory that contains more files and folders.
