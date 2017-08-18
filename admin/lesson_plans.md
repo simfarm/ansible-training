@@ -13,7 +13,7 @@ Session 3:
 * Tower is an ansible job runner that contains enterprise features.
 * Explanation of enterprise features.
 3) Lab
-* Use Tower 
+* Use Tower.
 4) Ending notes.
 * Exit survey.
 * Graduation, awards, and dismissal.
