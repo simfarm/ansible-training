@@ -60,6 +60,7 @@ Tb1IZLuerrbt/cVaXBoB4M/Vd50arOHTkiVJ5cimY99Wd34nU+E=
 ```
 * Create a job template with our created inventory, project, and machine credential. Call it "Sales Demo." For its playbook, pick `dynamic_inventory.yml`.
 * Create a job template with our created inventory, project, and machine credential. Call it "Check Network Connectivity." For its playbook, pick `ping-20.yml`.
+* Run both job templates.
 
 Implement and verify RBAC:
 * Give Danielle Blount and Joe Costigan the "member" permission of the "Sales" organization.
@@ -67,7 +68,7 @@ Implement and verify RBAC:
 * Give all sales users the "execute" permission of the "Sales Demo" job template.
 * Give all engineering users the "admin" permission of both job templates.
 * Authenticate as Joe Costigan.
-* Verify that he cannot see "Check Network Connectivity." Verify that he cannot edit the "Sales Demo" job template. Verify that he can only see members of his own organization.
+* Verify that he cannot see "Check Network Connectivity" job template. Verify that he cannot edit the "Sales Demo" job template. Verify that he can only see members of his own organization.
 * Launch "Sales Demo" job template as Joe Costigan.
 * Authenticate as Aaron Withrow.
 * Verify that he can see both job templates. Verify that he can edit both job templates. Verify that he can only see members of his own organization.
@@ -80,7 +81,7 @@ Advanced:
 * Run an ad hoc command. To do this navigate to the "INVENTORIES" tab and then pick your inventory. Then go to the "HOSTS" tab. Then check off the host that you want and then click "RUN COMMANDS."
 * Invoke the ping module. Use the credential that you already created.
 * Create an hourly scheduled job for our "Check Network Connectivity" job template. Set it to run indefinitely.
-* Verify stored job standard output under the entries under `/#/jobs`.
+* Verify stored job standard output under the entries under `/#/jobs/N/stdout/`.
 * Create an organization via `/api/v2/organizations/`. As a payload, supply:
 ```
 {
